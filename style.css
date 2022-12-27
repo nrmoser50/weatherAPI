@@ -19,6 +19,9 @@ header {
 	padding: 10px;
 }
 
-.daycard {
+.forecast-container {
 	margin: 10px;
+	
+	display: inline-block;
+	
 }
