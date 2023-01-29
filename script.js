@@ -4,6 +4,9 @@ let user = document.getElementById("#city-input");
 let forecastContainer = document.querySelector(".forecast-container");
 let currentContainer = document.querySelector(".card-body");
 
+window.onload = function() {
+	init();
+};
 // Get previously stored cities on page load
 function init () { 
 		
@@ -20,7 +23,8 @@ function init () {
 		}
 		ulEl.append(liEl)
 		// console.log(storedCities)	
-		} 		
+		} 	
+		
 }; 
 
 // search for cities
@@ -34,6 +38,7 @@ $("#search-city").on("click", function (event) {
 	getCoordinates(city); 
 	
 	});
+
 
 function getCoordinates (cityName) {
 	init();
